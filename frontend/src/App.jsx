@@ -4,7 +4,7 @@ import HomePage from "./pages/Home/Home";
 import { AuthProvider } from "./context/AuthContext";
 import Dashboard from "./pages/Admin/AdminPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./utils/ProtectedRoute";
 import Unauthorized from "./pages/Home/unauthorized";
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/loginadmin" element={<LoginAdminPage />} />
           <Route
-            path="/dashboard"
+            path="/dashboard/*"
             element={
               <ProtectedRoute requiredRole="admin">
                 <Dashboard />

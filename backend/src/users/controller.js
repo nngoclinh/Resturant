@@ -31,7 +31,21 @@ const editUser = async (req, res) => {
     res.status(500).send("Error editing users");
   }
 };
+const getUser = async (req, res) =>{
+  try{
+    const result = await pool.query(queries.selectUser)
+    if (!result.rows.length) {
+      return res.status(404).send("User database is empty!!");
+    }
+    else 
+    res.status(200).json(result.rows);
+  }catch(error){
+    console.error("Error fetching user", error);
+    res.status(500).send("Error fetching users");
+  }
+}
 module.exports = {
   deleteUser,
   editUser,
+  getUser
 };
