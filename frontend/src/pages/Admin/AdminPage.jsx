@@ -18,14 +18,7 @@ const AdminPage = () => {
   };
   return (
     <div>
-      <AdminSidebar />
-      <h1>Admin Page</h1>
-      <p>Welcome, {username}!</p>
-      <div>
-        <button className="login-button" onClick={handleLogout}>
-          Logout
-        </button>
-      </div>
+        <AdminSidebar/>
     </div>
   );
 };
