@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.admin-login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.show-password {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.show-password input {
+  margin-right: 5px;
+}
+
+.admin-login-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-login-button:hover {
+  background-color: #003f7d;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}

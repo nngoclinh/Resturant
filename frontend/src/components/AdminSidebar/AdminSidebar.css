@@ -1,0 +1,37 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 130px;
+    height: 100%;
+    background: linear-gradient(to bottom, #444, #222); /* Gradient background */
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+
+}
+  
+.sidebar.open {
+    left: 0; /* Slide into view */
+}
+  
+
+.toggle-button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+  
+.menu a {
+    display: block;
+    color: #e0f7fa; /* Lighter text color */
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.menu a:hover {
+    background-color: #515a5a; /* Background color on hover */
+    color: #ffffff; /* Change text color on hover */
+}
